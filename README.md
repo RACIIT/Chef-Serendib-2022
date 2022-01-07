@@ -1,3 +1,3 @@
-# MasterChef
+# Official Website of Chef Serendib 2022
 
-Cooking competition from RACIIT.
+-Sri Lanka's biggest Cooking competition organized from Rotaract Club of IIT.
