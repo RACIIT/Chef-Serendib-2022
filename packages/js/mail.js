@@ -40,7 +40,7 @@ function uploadFileUserPhoto() {
       var updates = {};
       var postData = {
         url: downloadURL,
-        name: $("username").val(),
+        name: $("#name-input").val(),
       };
       updates["/Posts/" + postKey] = postData;
       firebase.database().ref().update(updates);
@@ -63,7 +63,7 @@ function uploadFileVacPhoto() {
       var updates = {};
       var postData = {
         url: downloadURL,
-        name: $("username").val(),
+        name: $("#name-input").val(),
       };
       updates["/Cards/" + postKey] = postData;
       firebase.database().ref().update(updates);
