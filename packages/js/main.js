@@ -315,8 +315,25 @@ const cno = document.querySelector("#chefs-no");
 const res = document.querySelector("#chef-res");
 const cstate = document.querySelector("#chef-state");
 
-// |------------------------------ Sliding Form (Slider) -------------------------------|
 
+
+no.addEventListener("click", function (event) {
+  event.preventDefault();
+  Swal.fire({
+    position: "center",
+    title: "<strong>Important Notice!</strong>",
+    icon: "info",
+    html: "In order to particpate in this competition every <br> participant must have fully vaccinated!",
+    showCloseButton: true,
+    focusConfirm: false,
+    background: "#edfffc",
+    timer: 10000,
+  });
+});
+
+
+
+// |------------------------------ Sliding Form (Slider) -------------------------------|
 const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");
