@@ -69,7 +69,7 @@ window.addEventListener("load", () => {
   let totalSeconds;
 
   function init() {
-    totalSeconds = Math.floor((new Date("01/14/2022") - new Date()) / 1000);
+    totalSeconds = Math.floor((new Date("01/22/2022") - new Date()) / 1000);
     setTimeLeft();
     let interval = setInterval(() => {
       if (totalSeconds < 0) {
@@ -439,19 +439,7 @@ nextBtnSec.addEventListener("click", function (event) {
       background: "#edfffc",
       timer: 5000,
     });
-  } else if (Photo.value == "" || Photo.value == null) {
-    event.preventDefault();
-    Swal.fire({
-      position: "center",
-      icon: "error",
-      title: "Participant's Portrait cannot be empty!",
-      footer: "<p>Please enter your profile image</p>",
-      showConfirmButton: false,
-      showCancelButton: true,
-      background: "#edfffc",
-      timer: 5000,
-    });
-  } else {
+  }  else {
     event.preventDefault();
     slidePage.style.marginLeft = "-52%";
     bullet[current - 1].classList.add("active");
@@ -480,19 +468,7 @@ nextBtnThird.addEventListener("click", function (event) {
       background: "#edfffc",
       timer: 5000,
     });
-  } else if (vPhoto.value == "" || vPhoto.value == null) {
-    event.preventDefault();
-    Swal.fire({
-      position: "center",
-      icon: "error",
-      title: "Vaccination card image cannot be empty!",
-      footer: "<p>Please enter your vaccination card image</p>",
-      showConfirmButton: false,
-      showCancelButton: true,
-      background: "#edfffc",
-      timer: 5000,
-    });
-  } else if (
+  }  else if (
     chefyes.value == "" ||
     chefyes.value == null ||
     chefno.value == "" ||
